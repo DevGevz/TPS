@@ -37,4 +37,21 @@ scrollBtn.addEventListener("click", () => {
         top: 0,
         behavior: "smooth"
     });
+
+});
+
+window.addEventListener("load", function () {
+
+    setTimeout(function () {
+
+        const continuer = confirm(
+            "⚠️ Attention :\n\nCe site est fictif et à but expérimental.\n\nVoulez-vous continuer la navigation ?"
+        );
+
+        if (!continuer) {
+            window.location.href = "https://www.google.com";
+        }
+
+    }, 10000);
+
 });
